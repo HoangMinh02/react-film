@@ -1,0 +1,52 @@
+.detail {
+    color: #fff;
+    margin-top: 50px;
+}
+.detail img {
+    border-radius: 10px;
+    width: 100%;
+}
+.detail h1 {
+    font-size: 20px;
+}
+.detail .yearPro {
+    font-size: 10px;
+    margin: 10px 0;
+}
+.detail .yearPro .kind {
+    margin: 0 5px;
+}
+.detail .yearPro .time i {
+    color: var(--primarycolor);
+}
+.detail .rate {
+    font-size: 12px;
+}
+.detail .rate .number-rate {
+    color: var(--primarycolor);
+    border: 2px solid var(--primarycolor);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.detail .rate .user {
+    padding: 0 15px 0 10px;
+}
+.detail .rate .playtrailer {
+    border: 2px solid #fff;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+.detail h3 {
+    font-size: 11px;
+    margin: 10px 0;
+}
+.detail h2 {
+    font-size: 15px;
+}
+.detail .overview {
+    font-size: 12px;
+}
