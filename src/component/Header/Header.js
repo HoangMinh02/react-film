@@ -19,18 +19,30 @@ const Header = () => {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
-                    <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-                        <NavLink to="/" className="text-white">
-                            Home
-                        </NavLink>
-                        <NavLink to="/list-movie" className="text-white">
-                            Movies
-                        </NavLink>
+                    <Nav 
+                    className="justify-content-center flex-grow-1 pe-3" 
+                    style={{ maxHeight: '100px' }}
+                    navbarScroll
+                    >
+                    <NavLink to="/" className="text-white me-4">
+                        Home
+                    </NavLink>
+                    <NavLink to="/list-movie" className="text-white">
+                        Movies
+                    </NavLink>
                     </Nav>
                     <div className="d-flex">
-                        <Form.Control type="search" placeholder="Search for a movie" className="me-2" aria-label="Search" onChange={(e)=>setKeySearch(e.target.value)} onKeyDown={handleSearch}/>
-                        <Button variant="outline-success">Search</Button>
+                        <Form.Control 
+                            type="search" 
+                            placeholder="Search for a movie" 
+                            className="me-2 rounded-pill border border-warning border-3  " 
+                            aria-label="Search" 
+                            onChange={(e)=>setKeySearch(e.target.value)} 
+                            onKeyDown={handleSearch}
+                        />
+                        <i className="fa-solid fa-magnifying-glass" style={{color: "#FFD43B",}}></i>
                     </div>
+                    
                 </Navbar.Collapse>
             </Container>
         </Navbar>
