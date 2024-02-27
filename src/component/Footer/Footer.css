@@ -1,0 +1,31 @@
+.footer {
+    height: 200px;
+    background-color: black;
+    width: 100%;
+}
+.footer .info {
+    width: 100%;
+}
+.footer .info .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.footer .choice {
+    margin-left: 100px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+.footer .desc p {
+    color: white;
+}
+.footer .desc span {
+    color: var(--primary-color);
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+}

@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import ListMovie from "./component/ListMovie/ListMovie";
 import SearchMovie from "./component/ListMovie/SearchMovie";
 import DetailMovie from "./component/DetailMovie/DetailMovie";
+import Footer from "./component/Footer/Footer";
 
 function App() {
     return (
@@ -17,7 +18,7 @@ function App() {
                 <Route path="/search/:slug" element={<SearchMovie></SearchMovie>}></Route>
                 <Route path="/detail-movie/:slug" element={<DetailMovie></DetailMovie>}></Route>
             </Routes>
-            
+            <Footer></Footer> 
         </div>
     );
 }
