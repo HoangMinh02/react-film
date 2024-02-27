@@ -1,0 +1,18 @@
+.showMovie {
+    margin: 20px auto;
+    text-align: center;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.showMore {
+    background-color: var(--primary-color);
+    border: none;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+    transition: 0.5s;
+}
+.showMore:hover {
+    background-color: rgb(4, 4, 142);
+}

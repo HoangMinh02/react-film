@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import useFetch from '../../useFetch';
 import CardMovie from '../CardMovie/CardMovie';
+import "./ListMovie.css";
 
 const ListMovie = () => {
     const [newMovie, setNewMovie] = useState([]);
@@ -10,9 +11,10 @@ const ListMovie = () => {
     const allMovie = listMovie.results;
     useEffect(() => {
         if(allMovie){
+            //Kiểm tra độ trễ của api
             setNewMovie([...newMovie,...allMovie]);
         }
-    },[allMovie]);
+    },[allMovie]); //Khi có giá trị trả về thì dependency mới chạy
     const handleShowMore = () => {
         setPage(page + 1);
     }
@@ -24,14 +26,18 @@ const ListMovie = () => {
                 <h2>List Movie</h2>
             </div>
             <Row>
-                {allMovie &&
-                   allMovie.map((item) => (
-                    <Col lg={3}>
-                        <CardMovie key={item.id} poster_path={item.poster_path} title={item.title} release_date={item.release_date} vote_average={item.vote_average}></CardMovie>
-                    </Col>
-                ))} 
+                {newMovie &&
+                    newMovie.map((item) => (
+                        <Col lg={3} md={6}>
+                            <CardMovie key={item.id} id={item.id} poster_path={item.poster_path} title={item.title} release_date={item.release_date} vote_average={item.vote_average}></CardMovie>
+                        </Col>
+                ))}
             </Row>
-            <button variant="warning" onClick={handleShowMore}>Show more</button>
+            <div className="showMovie">
+                <Button className="showMore" onClick={handleShowMore}>
+                    <i className="fa-solid fa-play"></i>Show More
+                </Button>
+            </div>
         </Container>
     </div>;
 };
