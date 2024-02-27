@@ -1,6 +1,36 @@
+.header{
+    background-color: #000;
+}
+.choice{
+    margin-left: 300px;
+}
+.search{
+    position: relative;
+}
+.search input{
+    padding: 5px 25px;
+    width: 100%;
+    background-color: #000;
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    outline: none;
+}
+.search input::placeholder{
+    color: #fff;
+}
+.search .fa-magnifying-glass{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: var(--primary-color);
+}
+.navbar-nav a{
+    color: #fff;
+}
 .navbar-nav a.active{
     color: var(--primary-color) !important;
 }
-.d-flex{
-    font-size: 10px;
+.navbar-toggler-icon{
+    background-color: rgb(208, 202, 202) !important;
+    border-radius: 5px;
 }
