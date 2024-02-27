@@ -1,0 +1,54 @@
+.list-movie{
+    background-color: #14131a;
+    margin-top: 30px;
+}
+.headline {
+    text-align: center;
+}
+.headline h3 {
+    font-size: 15px;
+    color: var(--primary-color);
+}
+.headline h2 {
+    color: white;
+}
+.card-movie {
+    color: white;
+}
+.card-movie .thumb img{
+    border-radius: 10px;
+}
+.card-movie .thumb{
+    position: relative;
+    cursor: pointer;
+}
+.card-movie .thumb::after {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.388);
+    opacity: 0;
+    transition: 0.5s;
+}
+.card-movie .thumb:hover::after {
+    opacity: 1;
+}
+.vote {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-movie h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.card-movie .vote .voting {
+    color: var(--primary-color);
+}
+.card-movie .vote p{
+    font-size: 14px;
+}

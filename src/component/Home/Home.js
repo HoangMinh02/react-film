@@ -21,7 +21,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             {arrMovie.map((item)=>(
-                <ListMovie key={item.id} title={item.title} apiLink={item.apiLink}></ListMovie>
+                <ListMovie id={item.id} key={item.id} title={item.title} apiLink={item.apiLink}></ListMovie>
             ))} 
         </div>
     );
